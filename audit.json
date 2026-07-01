@@ -1,0 +1,66 @@
+[
+  {
+    "event_type": "classification",
+    "timestamp": "2026-07-01T04:30:12.123456+00:00",
+    "content_id": "3f7a2b1e-1234-5678-9012-abcdef123456",
+    "creator_id": "test-user-1",
+    "attribution": "likely_ai",
+    "confidence": 0.78,
+    "ai_likelihood": 0.87,
+    "llm_score": 0.91,
+    "llm_available": true,
+    "llm_reasoning": "The passage uses formulaic transitions and highly uniform phrasing.",
+    "stylometric_score": 0.77,
+    "stylometric_metrics": {
+      "word_count": 42,
+      "sentence_count": 3,
+      "average_sentence_length": 14.0,
+      "sentence_length_variance": 2.67,
+      "type_token_ratio": 0.79,
+      "punctuation_density": 0.07,
+      "transition_phrase_count": 2
+    },
+    "label": "This content is likely AI-generated. Automated analysis found strong AI-like patterns in the writing. This result is an estimate, not proof of authorship, and the creator may appeal the classification.",
+    "status": "classified",
+    "appeal_filed": false
+  },
+  {
+    "event_type": "classification",
+    "timestamp": "2026-07-01T04:32:20.123456+00:00",
+    "content_id": "98765432-abcd-4321-abcd-987654321000",
+    "creator_id": "test-user-human",
+    "attribution": "likely_human",
+    "confidence": 0.74,
+    "ai_likelihood": 0.16,
+    "llm_score": 0.11,
+    "llm_available": true,
+    "llm_reasoning": "The passage contains personal detail, slang, and irregular sentence structure.",
+    "stylometric_score": 0.28,
+    "stylometric_metrics": {
+      "word_count": 45,
+      "sentence_count": 4,
+      "average_sentence_length": 11.25,
+      "sentence_length_variance": 18.69,
+      "type_token_ratio": 0.82,
+      "punctuation_density": 0.11,
+      "transition_phrase_count": 0
+    },
+    "label": "This content is likely human-written. Automated analysis found strong indicators of human authorship, but no automated detector can verify authorship with certainty.",
+    "status": "classified",
+    "appeal_filed": false
+  },
+  {
+    "event_type": "appeal",
+    "timestamp": "2026-07-01T04:35:48.123456+00:00",
+    "content_id": "3f7a2b1e-1234-5678-9012-abcdef123456",
+    "creator_id": "test-user-1",
+    "original_attribution": "likely_ai",
+    "original_confidence": 0.78,
+    "original_ai_likelihood": 0.87,
+    "llm_score": 0.91,
+    "stylometric_score": 0.77,
+    "creator_reasoning": "I wrote this myself and can provide drafts.",
+    "status": "under_review",
+    "appeal_filed": true
+  }
+]
